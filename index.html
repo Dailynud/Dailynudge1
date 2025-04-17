@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DailyNudge</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #a8e6a1;
-      color: #333;
+      margin: 0;
+      background-color: #d4edda;
     }
     header {
-      background-color: #a8e6a1;
+      background-color: #155724;
+      color: white;
       text-align: center;
       padding: 40px 20px 20px;
     }
     header img {
-      width: 200px;
+      width: 150px;
+      margin-bottom: 20px;
     }
     nav {
-      text-align: center;
-      margin-top: 10px;
+      background-color: #19692c;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
     }
     nav a {
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
-      color: #333;
       font-weight: bold;
-      cursor: pointer;
     }
     section {
       padding: 40px 20px;
     }
     h2 {
-      color: #1a4d1a;
+      color: #155724;
     }
     .planes-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
-    .cuadro {
-      background: white;
-      padding: 40px;
+    .plan-box {
+      background-color: white;
+      border: 2px solid #155724;
       border-radius: 10px;
+      width: 200px;
       height: 200px;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      text-align: center;
       font-weight: bold;
-      font-size: 18px;
+    }
+    .file-upload {
+      margin: 10px 0;
     }
     footer {
+      background-color: #19692c;
+      color: white;
       text-align: center;
-      background-color: #75b674;
       padding: 20px;
-      color: white;
-    }
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo-blanco.png" alt="Logo DailyNudge" />
+    <img src="logo-blanco.png" alt="Logo DailyNudge">
+    <div class="logo-texto">Escribe aquí el eslogan o mensaje que quieras debajo del logo</div>
   </header>
   <nav>
-    <a onclick="scrollToSection('quienes')">¿Quiénes somos?</a>
-    <a onclick="scrollToSection('servicios')">Servicios</a>
-    <a onclick="scrollToSection('planes')">Planes</a>
-    <a onclick="scrollToSection('nosotros')">Sobre Nosotros</a>
-    <a onclick="scrollToSection('contacto')">Contacto</a>
+    <a href="#quienes">¿Quiénes somos?</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#planes">Planes</a>
+    <a href="#sobre">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 
   <section id="quienes">
     <h2>💡 ¿Quiénes Somos?</h2>
-    <p>En un mundo donde todo va rápido... un Daily Nudge.</p>
+    <p>En un mundo donde todo va rápido y donde es fácil olvidar lo esencial, nace DailyNudge...</p>
   </section>
 
   <section id="servicios">
@@ -87,47 +90,56 @@
     <ul>
       <li>🔔 Recordatorios Inteligentes Personalizados</li>
       <li>🧠 Alarmas con Voz a Tu Estilo</li>
-      <li>📍 Apoyo en Direcciones y Ubicación en Tiempo Real</li>
+      <li>📍 Apoyo en Direcciones y Ubicación</li>
       <li>👩‍❤️‍👨 Conexión de Pareja y Familia</li>
       <li>📅 Asistente de Vida Diaria</li>
-      <li>🎉 Planes Adaptados a Ti</li>
     </ul>
   </section>
 
   <section id="planes">
-    <h2>🎉 Planes</h2>
+    <h2>🎉 Planes Adaptados a Ti</h2>
     <div class="planes-grid">
-      <div class="cuadro">Imagen 1</div>
-      <div class="cuadro">Imagen 2</div>
-      <div class="cuadro">Imagen 3</div>
-      <div class="cuadro">Imagen 4</div>
-      <div class="cuadro">Imagen 5</div>
-      <div class="cuadro">Imagen 6</div>
+      <div class="plan-box">
+        <input type="file" class="file-upload" accept="image/*">
+        <p>Aquí tu texto o imagen</p>
+      </div>
+      <div class="plan-box">
+        <input type="file" class="file-upload" accept="image/*">
+        <p>Aquí tu texto o imagen</p>
+      </div>
+      <div class="plan-box">
+        <input type="file" class="file-upload" accept="image/*">
+        <p>Aquí tu texto o imagen</p>
+      </div>
+      <div class="plan-box">
+        <input type="file" class="file-upload" accept="image/*">
+        <p>Aquí tu texto o imagen</p>
+      </div>
+      <div class="plan-box">
+        <input type="file" class="file-upload" accept="image/*">
+        <p>Aquí tu texto o imagen</p>
+      </div>
+      <div class="plan-box">
+        <input type="file" class="file-upload" accept="image/*">
+        <p>Aquí tu texto o imagen</p>
+      </div>
     </div>
   </section>
 
-  <section id="nosotros">
+  <section id="sobre">
     <h2>💙 Sobre Nosotros – DailyNudge</h2>
-    <p>En DailyNudge, creemos que todos necesitamos... nuestra razón de ser.</p>
+    <p>En DailyNudge, creemos que todos necesitamos una mano amiga en el día a día...</p>
   </section>
 
   <section id="contacto">
-    <h2>📞 Contacto</h2>
+    <h2>📲 Redes Sociales</h2>
     <p>Facebook: dailynudge1@gmail.com</p>
-    <p>Instagram: <a href="https://www.instagram.com/dailynudgeco/" target="_blank">@dailynudgeco</a></p>
-    <p>TikTok: <a href="https://www.tiktok.com/@dailynudge6" target="_blank">@dailynudge6</a></p>
+    <p><a href="https://www.instagram.com/dailynudgeco/" target="_blank">Instagram: @dailynudgeco</a></p>
+    <p><a href="https://www.tiktok.com/@dailynudge6?_t=ZS-8vcAWJGqXIq&_r=1" target="_blank">TikTok: @dailynudge6</a></p>
   </section>
 
   <footer>
-    <p>Síguenos en redes sociales:</p>
-    <a href="https://www.instagram.com/dailynudgeco/" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@dailynudge6" target="_blank">TikTok</a>
+    © 2025 DailyNudge. Todos los derechos reservados.
   </footer>
-
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
