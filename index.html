@@ -7,75 +7,127 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fefefe;
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #a8e6a1;
+      color: #333;
     }
     header {
-      background-color: #f9c846;
-      padding: 1.5rem;
-      width: 100%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #a8e6a1;
+      text-align: center;
+      padding: 40px 20px 20px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header img {
+      width: 200px;
     }
-    main {
-      padding: 2rem;
-      max-width: 600px;
+    nav {
+      text-align: center;
+      margin-top: 10px;
     }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .btn {
-      background-color: #f9c846;
-      color: #000;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 1.5rem;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
-      font-size: 1rem;
       cursor: pointer;
-      transition: 0.3s;
     }
-    .btn:hover {
-      background-color: #f1b51d;
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #1a4d1a;
+    }
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .cuadro {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    footer {
+      text-align: center;
+      background-color: #75b674;
+      padding: 20px;
+      color: white;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>DailyNudge 💛</h1>
+    <img src="logo-blanco.png" alt="Logo DailyNudge" />
   </header>
-  <main>
-    <div class="section">
-      <h2>¡Bienvenidx!</h2>
-      <p>DailyNudge es tu empujón diario para brillar sin drama. 🌟</p>
-    </div>
+  <nav>
+    <a onclick="scrollToSection('quienes')">¿Quiénes somos?</a>
+    <a onclick="scrollToSection('servicios')">Servicios</a>
+    <a onclick="scrollToSection('planes')">Planes</a>
+    <a onclick="scrollToSection('nosotros')">Sobre Nosotros</a>
+    <a onclick="scrollToSection('contacto')">Contacto</a>
+  </nav>
 
-    <div class="section">
-      <h3>¿Qué hacemos?</h3>
-      <p>
-        Te ayudamos a construir mini hábitos, mantener el enfoque y dejar de procrastinar,
-        con tips diarios llenos de flow y buena vibra. 🧠🔥
-      </p>
-    </div>
+  <section id="quienes">
+    <h2>💡 ¿Quiénes Somos?</h2>
+    <p>En un mundo donde todo va rápido... un Daily Nudge.</p>
+  </section>
 
-    <div class="section">
-      <h3>Contáctanos</h3>
-      <p>
-        Escríbenos por Instagram o TikTok para unirte a la comunidad de DailyNudge. 💬✨
-      </p>
-      <button class="btn">¡Síguenos!</button>
+  <section id="servicios">
+    <h2>✅ ¿Qué Servicios Ofrecemos en DailyNudge?</h2>
+    <ul>
+      <li>🔔 Recordatorios Inteligentes Personalizados</li>
+      <li>🧠 Alarmas con Voz a Tu Estilo</li>
+      <li>📍 Apoyo en Direcciones y Ubicación en Tiempo Real</li>
+      <li>👩‍❤️‍👨 Conexión de Pareja y Familia</li>
+      <li>📅 Asistente de Vida Diaria</li>
+      <li>🎉 Planes Adaptados a Ti</li>
+    </ul>
+  </section>
+
+  <section id="planes">
+    <h2>🎉 Planes</h2>
+    <div class="planes-grid">
+      <div class="cuadro">Imagen 1</div>
+      <div class="cuadro">Imagen 2</div>
+      <div class="cuadro">Imagen 3</div>
+      <div class="cuadro">Imagen 4</div>
+      <div class="cuadro">Imagen 5</div>
+      <div class="cuadro">Imagen 6</div>
     </div>
-  </main>
+  </section>
+
+  <section id="nosotros">
+    <h2>💙 Sobre Nosotros – DailyNudge</h2>
+    <p>En DailyNudge, creemos que todos necesitamos... nuestra razón de ser.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>📞 Contacto</h2>
+    <p>Facebook: dailynudge1@gmail.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/dailynudgeco/" target="_blank">@dailynudgeco</a></p>
+    <p>TikTok: <a href="https://www.tiktok.com/@dailynudge6" target="_blank">@dailynudge6</a></p>
+  </section>
+
+  <footer>
+    <p>Síguenos en redes sociales:</p>
+    <a href="https://www.instagram.com/dailynudgeco/" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@dailynudge6" target="_blank">TikTok</a>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
